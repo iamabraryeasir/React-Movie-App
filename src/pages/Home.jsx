@@ -63,11 +63,11 @@ function Home() {
     <>
       <form
         onSubmit={handleSearch}
-        className="max-w-[1140px] w-full flex items-center mx-auto justify-center py-10 gap-4"
+        className="max-w-[1140px] w-full flex items-center mx-auto justify-center py-10 gap-3 md:gap-4"
       >
         <input
           type="text"
-          className="bg-transparent border-2 border-gray-500 rounded-lg text-xl px-4 py-2 text-white w-5/12"
+          className="bg-transparent border-2 border-gray-500 rounded-lg text-xl px-4 py-2 text-white w-full md:w-5/12"
           placeholder="Search for Movies.."
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
